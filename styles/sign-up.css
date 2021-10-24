@@ -37,20 +37,24 @@ input {
 
     input#first-name, input#last-name {
         background: url(../assets/user.svg) no-repeat scroll 15px 10px;
+        background-color: white;
     }
 
     input#email {
         background: url(../assets/email.svg) no-repeat scroll 15px 10px;
+        background-color: white;
     }
 
     input#password {
         background: url(../assets/lock.svg) no-repeat scroll 15px 10px;
         width: 318px;
+        background-color: white;
     }
 
     input#confirm-password {
         background: url(../assets/check.svg) no-repeat scroll 15px 10px;
         width: 318px;
+        background-color: white;
     }
 
     .to-sign-in {
@@ -60,10 +64,6 @@ input {
 }
 
 @media (max-width: 430px) {
-    form, input#password, input#confirm-password {
-        width: 192px;
-    }
-
     input#password, input#confirm-password {
         width: 206px;
     }
