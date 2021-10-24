@@ -1,0 +1,133 @@
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: #A1ABC9;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+}
+
+.auth-area {
+    flex: 1 0 560px;
+    background-color: #F9FAFF;
+}
+
+.auth-area__wrapper {
+    margin: 0 auto;
+    width: 368px;
+    margin-top: 168px;
+}
+
+.background-img {
+    flex: 0 1 1360px;
+    background-image: url(../assets/bg.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-size: 24px;
+    color: #202225;
+    text-transform: capitalize;
+    line-height: 110%;
+    margin-bottom: 40px;
+}
+
+.auth-area__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-area__form input {
+    height: 56px;
+    color: #A1ABC9;
+    border: 1px solid #DCE0EC;
+    border-radius: 8px;
+    font-size: 17px;
+    margin-bottom: 37px;
+}
+
+.auth-area__form input[type=submit] {
+    margin-top: 23px;
+    width: 146px;
+    color: white;
+    font-weight: 600;
+    align-items: center;
+    text-transform: capitalize;
+    background: #7297FF url('../assets/angle-right.svg') no-repeat center right 22px;
+    padding-left: 0px;
+    padding-right: 22px;
+}
+
+::placeholder {
+    color: #A1ABC9;
+    text-transform: capitalize;
+}
+
+.auth-area__password img {
+    margin-left: -50px;
+    padding-top: 11px;
+    margin-bottom: -6px;
+} 
+
+@media (max-width: 430px) {
+    .auth-area__form {
+        width: 256px;
+    }
+
+    .auth-area__wrapper {
+        width: 256px;
+    }
+}
+
+@media (max-width: 590px) {
+    .auth-area__wrapper {
+        margin-top: 35px;
+        height: 100vh;
+    }
+
+    .auth-area input[type=submit] {
+        height: 48px;
+        margin-top: 7px;
+        width: 125px;
+    }
+
+    .auth-area__form input {
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .auth-area__password img {
+        margin-left: -40px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 29px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .background-img {
+        background-size: 100%;
+    }
+
+    .auth-area {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 74px;
+        border-radius: 25px;
+    }
+}
