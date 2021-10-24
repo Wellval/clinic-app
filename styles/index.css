@@ -106,7 +106,9 @@ h2 {
         height: 40px;
         margin-bottom: 20px;
         background-color: white;
-
+        padding-left: 47px;
+        letter-spacing: 0px;
+        font-size: 15px;
     }
 
     .auth-area__password img {

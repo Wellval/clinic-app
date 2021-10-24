@@ -30,11 +30,6 @@ input {
 }
 
 @media (max-width: 590px) {
-    input {
-        padding-left: 47px;
-        letter-spacing: 0px;
-    }
-
     input#first-name, input#last-name {
         background: url(../assets/user.svg) no-repeat scroll 15px 10px;
         background-color: white;
