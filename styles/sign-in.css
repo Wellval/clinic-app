@@ -64,7 +64,6 @@ input {
   }
 
   .auth-area__password button {
-    margin-left: -40px;
     top: 196px;
   }
 
@@ -113,5 +112,9 @@ input {
   form,
   input#password {
     width: 202px;
+  }
+
+  .auth-area__password button {
+    margin-left: 210px;
   }
 }
