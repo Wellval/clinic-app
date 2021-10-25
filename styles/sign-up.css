@@ -14,6 +14,12 @@ input#password {
     width: 306px;
 }
 
+#confirm-password-eye, #password-eye {
+    position: absolute;
+    margin-top: -78px;
+    margin-left: 326px;
+}
+
 input#confirm-password {
     background: url(../assets/check.svg) no-repeat scroll 22px 19px;
     background-color: white;
@@ -33,6 +39,10 @@ input {
     input#first-name, input#last-name {
         background: url(../assets/user.svg) no-repeat scroll 15px 10px;
         background-color: white;
+    }
+
+    #confirm-password-eye, #password-eye {
+        margin-top: -54px;
     }
 
     input#email {
@@ -61,5 +71,9 @@ input {
 @media (max-width: 430px) {
     input#password, input#confirm-password {
         width: 206px;
+    }
+
+    #confirm-password-eye, #password-eye {
+        margin-left: 220px;
     }
 } 

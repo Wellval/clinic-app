@@ -13,7 +13,6 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="background-img"></div>
         <div class="auth-area">
             <div class="auth-area__wrapper">
                 <h2>
@@ -25,13 +24,13 @@
                     <input type="email" name="email" id="email" placeholder="Email">
                     <div class="auth-area__password">
                         <input type="password" name="password" id="password" placeholder="Password">
-                        <img src="../assets/eye-slash.svg">
+                        <img id="password-eye" src="../assets/eye-slash.svg">
                     </div>
                     <div class="auth-area__password">
                         <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password">
-                        <img src="../assets/eye-slash.svg">
+                        <img id="confirm-password-eye" src="../assets/eye-slash.svg">
                     </div>
-                    <input type="submit" id="image-button" value="Sign Up"></input>
+                    <button type="submit" id="image-button">Sign Up</button>
                 </form>
                 <p class="to-sign-in">
                     Already have an account? <a href="#">Sign in</a>
