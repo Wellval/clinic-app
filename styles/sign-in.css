@@ -16,7 +16,7 @@ input#password {
 .auth-area__password img {
     margin-left: 326px;
     position: absolute;
-    top: 435px;
+    top: 455px;
 } 
 
 input {
@@ -24,9 +24,14 @@ input {
     letter-spacing: 0.8px;
 }
 
+.auth-area__form #image-button {
+    margin-bottom: 32px;
+}
+
 .to-sign-up {
     font-size: 15px;
-    margin-top: 252px;
+    margin-top: auto;
+    margin-bottom: 80px;
 }
 
 .to-sign-up a {
