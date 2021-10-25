@@ -16,8 +16,10 @@ input#password {
 
 #confirm-password-eye, #password-eye {
     position: absolute;
-    margin-top: -78px;
+    margin-top: -81px;
     margin-left: 326px;
+    border: none;
+    background-color: transparent;
 }
 
 input#confirm-password {

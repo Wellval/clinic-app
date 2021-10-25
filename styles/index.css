@@ -10,6 +10,10 @@ body {
     height: 100%;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 p {
     color: #A1ABC9;
 }
@@ -89,7 +93,7 @@ a {
     text-transform: capitalize;
 }
 
-@media (max-height: 900px) {
+@media (max-height: 790px) {
     .wrapper {
         height: auto;
     }

@@ -1,96 +1,117 @@
 .auth-area__wrapper {
-    margin-top: 265px;
+  margin-top: 265px;
 }
 
 input#email {
-    background: url(../assets/email.svg) no-repeat scroll 22px 19px;
-    background-color: white;
+  background: url(../assets/email.svg) no-repeat scroll 22px 19px;
+  background-color: white;
 }
 
 input#password {
-    background: url(../assets/lock.svg) no-repeat scroll 22px 19px;
-    width: 303px;
-    background-color: white;
+  background: url(../assets/lock.svg) no-repeat scroll 22px 19px;
+  width: 303px;
+  background-color: white;
 }
 
-.auth-area__password img {
-    margin-left: 326px;
-    position: absolute;
-    top: 455px;
-} 
+.auth-area__password button {
+  margin-left: 326px;
+  position: absolute;
+  top: 455px;
+  border: none;
+  background-color: transparent;
+}
+
+.error-message {
+  color: #F6657F;
+  font-size: 13px;
+  margin-top: 8px;
+  font-weight: 400;
+  margin-bottom: 37px;
+  display: none;
+}
+
+.error .error-message {
+  display: inline-block;
+}
+
+.error input {
+    margin-bottom: 0;
+    border-color: #F6657F;
+}
 
 input {
-    padding-left: 62px;
-    letter-spacing: 0.8px;
+  padding-left: 62px;
+  letter-spacing: 0.8px;
 }
 
 .auth-area__form #image-button {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .to-sign-up {
-    font-size: 15px;
-    margin-top: auto;
-    margin-bottom: 80px;
+  font-size: 15px;
+  margin-top: auto;
+  margin-bottom: 80px;
 }
 
 .to-sign-up a {
-    margin-left: 32px;
+  margin-left: 32px;
 }
 
 @media (max-width: 590px) {
-    input {
-        padding-left: 50px;
-    }
+  input {
+    padding-left: 50px;
+  }
 
-    .auth-area__password img {
-        margin-left: -40px;
-        top: 196px;
-    }
+  .auth-area__password button {
+    margin-left: -40px;
+    top: 196px;
+  }
 
-    input#email {
-        background: url(../assets/email.svg) no-repeat scroll 15px 10px;
-        background-color: white;
-    }
+  input#email {
+    background: url(../assets/email.svg) no-repeat scroll 15px 10px;
+    background-color: white;
+  }
 
-    input#password {
-        background: url(../assets/lock.svg) no-repeat scroll 15px 10px;
-        background-color: white;
-        width: 314px;
-    }
+  input#password {
+    background: url(../assets/lock.svg) no-repeat scroll 15px 10px;
+    background-color: white;
+    width: 314px;
+  }
 
-    .auth-area__wrapper {
-        margin-top: 35px;
-        height: 100vh;
-    }
+  .auth-area__wrapper {
+    margin-top: 35px;
+    height: 100vh;
+  }
 
-    .auth-area #image-button {
-        height: 48px;
-        margin-top: 56px;
-        width: 120px;
-    }
+  .auth-area #image-button {
+    height: 48px;
+    margin-top: 56px;
+    width: 120px;
+  }
 
-    .auth-area__password {
-        margin-right: 1px;
-    }
+  .auth-area__password {
+    margin-right: 1px;
+  }
 
-    .to-sign-up {
-        margin-top: 98px;
-        display: flex;
-        flex-direction: column;
-    }
+  .to-sign-up {
+    margin-top: 98px;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .auth-area form {
-        margin-bottom: 10px;
-    }
+  .auth-area form {
+    margin-bottom: 10px;
+  }
 
-    .to-sign-up a {
-        margin-left: 0;
-    }
+  .to-sign-up a {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 430px) {
-    form, input#password {
-        width: 202px;
-    }
-} 
+  form,
+  input#password {
+    width: 202px;
+  }
+}
