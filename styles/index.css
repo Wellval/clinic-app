@@ -39,7 +39,7 @@ a {
     margin-top: 168px;
 }
 
-h2 {
+.header {
     font-size: 24px;
     color: #202225;
     text-transform: capitalize;
@@ -62,6 +62,11 @@ h2 {
     background-color: white;
 }
 
+.auth-area__form input:focus {
+    box-shadow: 0px 4px 32px rgba(218, 228, 255, 0.16);
+    border: 1px solid #7297FF;
+}
+
 .auth-area__form #image-button {
     border: none;
     font-size: 17px;
@@ -82,7 +87,7 @@ h2 {
     text-transform: capitalize;
 }
 
-@media (max-height: 1000px) {
+@media (max-height: 900px) {
     .wrapper {
         height: auto;
     }
@@ -124,7 +129,7 @@ h2 {
         font-size: 15px;
     }
 
-    h2 {
+    .header {
         font-size: 20px;
         margin-bottom: 29px;
         margin-top: 32px;

@@ -16,7 +16,7 @@ input#password {
 .auth-area__password img {
     margin-left: 326px;
     position: absolute;
-    top: 448px;
+    top: 435px;
 } 
 
 input {
@@ -40,7 +40,7 @@ input {
 
     .auth-area__password img {
         margin-left: -40px;
-        top: 204px;
+        top: 196px;
     }
 
     input#email {
