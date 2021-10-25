@@ -37,6 +37,10 @@ input {
     margin-top: 80px;
 }
 
+.to-sign-in a {
+    margin-left: 12px;
+}
+
 @media (max-width: 590px) {
     input#first-name, input#last-name {
         background: url(../assets/user.svg) no-repeat scroll 15px 10px;
