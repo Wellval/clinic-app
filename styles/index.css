@@ -1,217 +1,210 @@
 html {
-    font-family: 'Poppins', sans-serif;
-    height: 100vh;
-
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 button {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 p {
-    color: #A1ABC9;
+  color: #a1abc9;
 }
 
 a {
-    color: #7297FF;
+  color: #7297ff;
 }
 
 .wrapper {
-    display: flex;
-    background-image: url(../assets/bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    justify-content: flex-end;
+  display: flex;
+  background-image: url(../assets/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  justify-content: flex-end;
 }
 
 .header-wrapper__link a {
-    text-decoration: none;
-    color: #202225;
+  text-decoration: none;
+  color: #202225;
 }
 
 input {
-    width: 100%;
-    box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .auth-area {
-    background-color: #F9FAFF;
-    display: flex;
-    padding: 168px 96px;
-    max-width: 560px;
-    width: 100%;
-    box-sizing: border-box;
+  background-color: #f9faff;
+  display: flex;
+  padding: 168px 96px;
+  max-width: 560px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .auth-area__wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .header {
-    font-size: 24px;
-    color: #202225;
-    text-transform: capitalize;
-    line-height: 110%;
+  font-size: 24px;
+  color: #202225;
+  text-transform: capitalize;
+  line-height: 110%;
 }
 
-#confirm-password-eye, #password-eye {
-    position: absolute;
-    border: none;
-    background-color: transparent;
-    width: 20px;
-    height: 20px;
-    right: 18px;
-    top: 50%;
-    transform: translateY(-50%);
+#confirm-password-eye,
+#password-eye {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .header-wrapper {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .header-wrapper__link h2 {
-    padding-left: 31px;
+  padding-left: 31px;
 }
 
 .header-wrapper__link {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .auth-area__form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .auth-area__input {
-    position: relative;
-    height: 56px;
-    margin-bottom: 40px;
+  position: relative;
+  height: 56px;
+  margin-bottom: 40px;
 }
 
 .auth-area__form input {
-    height: 56px;
-    color: #A1ABC9;
-    border: 1px solid #DCE0EC;
-    border-radius: 8px;
-    font-size: 17px;
-    background-color: white;
+  height: 56px;
+  color: #a1abc9;
+  border: 1px solid #dce0ec;
+  border-radius: 8px;
+  font-size: 17px;
+  background-color: white;
 }
 
 .auth-area__form input:focus {
-    box-shadow: 0px 4px 32px rgba(218, 228, 255, 0.16);
-    border: 1px solid #7297FF;
+  box-shadow: 0px 4px 32px rgba(218, 228, 255, 0.16);
+  border: 1px solid #7297ff;
 }
 
 .auth-area__form #image-button {
-    border: none;
-    font-size: 17px;
-    width: 140px;
-    height: 56px;
-    color: white;
-    font-weight: 600;
-    align-items: center;
-    text-transform: capitalize;
-    background: #7297FF url('../assets/angle-right.svg') no-repeat center right 22px;
-    padding-right: 48px;
+  border: none;
+  font-size: 17px;
+  width: 140px;
+  height: 56px;
+  color: white;
+  font-weight: 600;
+  align-items: center;
+  text-transform: capitalize;
+  background: #7297ff url("../assets/angle-right.svg") no-repeat center right
+    22px;
+  padding-right: 48px;
 }
 
 .header-wrapper__link a {
-    background: url(../assets/angle-left.svg) no-repeat;
+  background: url(../assets/angle-left.svg) no-repeat;
 }
 
 input {
-    padding-left: 62px;
-    letter-spacing: 0.8px;
-  }
-
-::placeholder {
-    color: #A1ABC9;
-    text-transform: capitalize;
+  padding-left: 62px;
+  letter-spacing: 0.8px;
 }
 
-@media (max-height: 790px) {
-    .wrapper {
-        height: 100%;
-    }
+::placeholder {
+  color: #a1abc9;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    height: 100%;
+  }
 }
 
 @media (max-width: 440px) {
-    .auth-area__form {
-        width: 256px;
-    }
+  .auth-area__form {
+    width: 256px;
+  }
 
-    .auth-area__wrapper {
-        width: 256px;
-    }
+  .auth-area__wrapper {
+    width: 256px;
+  }
 
-    h2 {
-        font-size: 20px;
-    }
+  h2 {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 560px) {
-    .auth-area__wrapper {
-        height: 100vh;
-        padding-top: 0;
-    }
+  .auth-area__wrapper {
+    padding-top: 0;
+  }
 
-    .auth-area {
-        padding: 32px;
-        justify-content: center;
-      }
+  .auth-area {
+    padding: 32px;
+    justify-content: center;
+  }
 
-    .wrapper {
-        height: auto;
-    }
+  .auth-area #image-button {
+    height: 48px;
+    width: 125px;
+  }
 
-    .auth-area #image-button {
-        height: 48px;
-        width: 125px;
-    }
+  .auth-area__form input {
+    height: 40px;
+    background-color: white;
+    padding-left: 47px;
+    letter-spacing: 0px;
+    font-size: 15px;
+  }
 
-    .auth-area__form input {
-        height: 40px;
-        background-color: white;
-        padding-left: 47px;
-        letter-spacing: 0px;
-        font-size: 15px;
-    }
+  .header {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
 
-    .header {
-        font-size: 20px;
-        margin-bottom: 24px;
-    }
+  #password-eye,
+  #confirm-password-eye {
+    transform: translateY(-100%);
+  }
 
-    #password-eye, #confirm-password-eye {
-        transform: translateY(-100%);
-    }
-
-    .wrapper {
-        flex-direction: column;
-    }
-
-    .auth-area {
-        margin-top: 72px;
-        border-radius: 25px;
-        width: 100%;
-    }
+  .auth-area {
+    margin-top: 72px;
+    border-radius: 25px;
+    width: 100%;
+  }
 }
