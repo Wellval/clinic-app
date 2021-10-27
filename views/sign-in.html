@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/sign-in.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/sign-in.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="auth-area">
-            <div class="auth-area__wrapper">
-                <h2>
-                    Sign in
-                </h2>
-                <form class="auth-area__form">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <div class="error-message">Email not found. Please check the spelling</div>
-                    <div class="auth-area__password error">
-                        <input type="password" name="password" id="password" placeholder="Password">
-                        <button><img src="../assets/eye-slash.svg"></button>
-                        <div class="error-message">Password contain unsupported characters</div>
-                    </div>
-                    <button type="submit" id="image-button">Sign In</button>
-                </form>
-                <a href="#">Forgot password?</a>
-                <p class="to-sign-up">
-                    Don’t have an account? <a href="#">Sign up</a>
-                </p>
+      <div class="auth-area">
+        <div class="auth-area__wrapper">
+          <div class="header-wrapper">
+            <h2>Sign in</h2>
+          </div>
+          <form class="auth-area__form">
+            <div class="auth-area__input">
+              <input type="email" name="email" id="email" placeholder="Email" />
             </div>
+            <div class="error-message">
+              Email not found. Please check the spelling
+            </div>
+            <div class="auth-area__input auth-area__input_password error">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+              <button><img src="../assets/eye-slash.svg" /></button>
+              <div class="error-message">
+                Password contain unsupported characters
+              </div>
+            </div>
+            <button type="submit" id="image-button">Sign In</button>
+          </form>
+          <a href="#">Forgot password?</a>
+          <p class="to-sign-up">
+            Don’t have an account? <a href="#">Sign up</a>
+          </p>
         </div>
+      </div>
     </div>
-</body>
-</html> 
+  </body>
+</html>

@@ -1,7 +1,3 @@
-.auth-area__wrapper {
-  margin-top: 265px;
-}
-
 input#email {
   background: url(../assets/email.svg) no-repeat scroll 22px 19px;
   background-color: white;
@@ -9,16 +5,15 @@ input#email {
 
 input#password {
   background: url(../assets/lock.svg) no-repeat scroll 22px 19px;
-  width: 303px;
   background-color: white;
 }
 
-.auth-area__password {
+.auth-area__input {
     position: relative;
     height: 56px;
 }
 
-.auth-area__password button {
+.auth-area__input button {
 top: 50%;  
 position: absolute;
 right: 16px;
@@ -27,12 +22,15 @@ right: 16px;
   background-color: transparent;
 }
 
+#image-button {
+  margin-bottom: 32px;
+}
+
 .error-message {
   color: #F6657F;
   font-size: 13px;
   margin-top: 8px;
   font-weight: 400;
-  margin-bottom: 37px;
   display: none;
 }
 
@@ -45,14 +43,8 @@ right: 16px;
     border-color: #F6657F;
 }
 
-input {
-  padding-left: 62px;
-  letter-spacing: 0.8px;
-}
-
-.auth-area__form #image-button {
-  margin-bottom: 32px;
-  margin-top: 64px;
+.auth-area__input_password {
+  margin-bottom: 80px;
 }
 
 .to-sign-up {
@@ -61,16 +53,16 @@ input {
   margin-bottom: 80px;
 }
 
+.auth-area__input_password {
+  margin-bottom: 64px;
+}
+
 .to-sign-up a {
   margin-left: 32px;
 }
 
-@media (max-width: 590px) {
-  input {
-    padding-left: 50px;
-  }
-
-  .auth-area__password button {
+@media (max-width: 560px) {
+  .auth-area__input button {
     transform: translate(0%, -65%);
   }
 
@@ -82,21 +74,14 @@ input {
   input#password {
     background: url(../assets/lock.svg) no-repeat scroll 15px 10px;
     background-color: white;
-    width: 314px;
-  }
-
-  .auth-area__wrapper {
-    margin-top: 35px;
-    height: 100vh;
   }
 
   .auth-area #image-button {
     height: 48px;
-    margin-top: 56px;
     width: 120px;
   }
 
-  .auth-area__password {
+  .auth-area__input {
     margin-right: 1px;
   }
 
@@ -115,13 +100,3 @@ input {
   }
 }
 
-@media (max-width: 430px) {
-  form,
-  input#password {
-    width: 205px;
-  }
-
-  .auth-area__password button {
-    margin-left: 210px;
-  }
-}

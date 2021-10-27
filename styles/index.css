@@ -32,21 +32,32 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    justify-content: flex-end;
+}
+
+.header-wrapper__link a {
+    text-decoration: none;
+    color: #202225;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .auth-area {
-    flex: 0 1 560px;
     background-color: #F9FAFF;
     display: flex;
-    margin-left: auto;
+    padding: 168px 96px;
+    max-width: 560px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .auth-area__wrapper {
-    margin: 0 auto;
-    width: 368px;
-    margin-top: 168px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .header {
@@ -54,12 +65,46 @@ a {
     color: #202225;
     text-transform: capitalize;
     line-height: 110%;
+}
+
+#confirm-password-eye, #password-eye {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h2 {
+    margin: 0;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
     margin-bottom: 40px;
+}
+
+.header-wrapper__link h2 {
+    padding-left: 31px;
+}
+
+.header-wrapper__link {
+    margin-bottom: 32px;
 }
 
 .auth-area__form {
     display: flex;
     flex-direction: column;
+}
+
+.auth-area__input {
+    position: relative;
+    height: 56px;
+    margin-bottom: 40px;
 }
 
 .auth-area__form input {
@@ -68,7 +113,6 @@ a {
     border: 1px solid #DCE0EC;
     border-radius: 8px;
     font-size: 17px;
-    margin-bottom: 37px;
     background-color: white;
 }
 
@@ -80,7 +124,6 @@ a {
 .auth-area__form #image-button {
     border: none;
     font-size: 17px;
-    margin-top: 27px;
     width: 140px;
     height: 56px;
     color: white;
@@ -88,9 +131,17 @@ a {
     align-items: center;
     text-transform: capitalize;
     background: #7297FF url('../assets/angle-right.svg') no-repeat center right 22px;
-    padding-left: 0px;
-    padding-right: 22px;
+    padding-right: 48px;
 }
+
+.header-wrapper__link a {
+    background: url(../assets/angle-left.svg) no-repeat;
+}
+
+input {
+    padding-left: 62px;
+    letter-spacing: 0.8px;
+  }
 
 ::placeholder {
     color: #A1ABC9;
@@ -99,11 +150,11 @@ a {
 
 @media (max-height: 790px) {
     .wrapper {
-        height: auto;
+        height: 100%;
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 440px) {
     .auth-area__form {
         width: 256px;
     }
@@ -111,14 +162,22 @@ a {
     .auth-area__wrapper {
         width: 256px;
     }
+
+    h2 {
+        font-size: 20px;
+    }
 }
 
-@media (max-width: 590px) {
+@media (max-width: 560px) {
     .auth-area__wrapper {
         height: 100vh;
-        margin-top: 32px;
-        padding-top: 11px;
+        padding-top: 0;
     }
+
+    .auth-area {
+        padding: 32px;
+        justify-content: center;
+      }
 
     .wrapper {
         height: auto;
@@ -126,13 +185,11 @@ a {
 
     .auth-area #image-button {
         height: 48px;
-        margin-top: 7px;
         width: 125px;
     }
 
     .auth-area__form input {
         height: 40px;
-        margin-bottom: 20px;
         background-color: white;
         padding-left: 47px;
         letter-spacing: 0px;
@@ -141,8 +198,11 @@ a {
 
     .header {
         font-size: 20px;
-        margin-bottom: 29px;
-        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+
+    #password-eye, #confirm-password-eye {
+        transform: translateY(-100%);
     }
 
     .wrapper {
@@ -150,12 +210,8 @@ a {
     }
 
     .auth-area {
-        position: relative;
-        left: 0;
-        right: 0;
-        height: 100%;
-        top: 74px;
+        margin-top: 72px;
         border-radius: 25px;
-        margin-left: 0;
+        width: 100%;
     }
 }
